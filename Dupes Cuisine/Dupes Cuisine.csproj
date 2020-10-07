@@ -1,0 +1,111 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{530FE099-7FBF-4456-A63B-FF03BFB5F395}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Dupes_Cuisine</RootNamespace>
+    <AssemblyName>Dupes Cuisine</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="0Harmony">
+      <HintPath>D:\Steam Games\steamapps\common\OxygenNotIncluded\OxygenNotIncluded_Data\Managed\0Harmony.dll</HintPath>
+    </Reference>
+    <Reference Include="Assembly-CSharp">
+      <HintPath>D:\Steam Games\steamapps\common\OxygenNotIncluded\OxygenNotIncluded_Data\Managed\Assembly-CSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="Assembly-CSharp-firstpass">
+      <HintPath>D:\Steam Games\steamapps\common\OxygenNotIncluded\OxygenNotIncluded_Data\Managed\Assembly-CSharp-firstpass.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>D:\Steam Games\steamapps\common\OxygenNotIncluded\OxygenNotIncluded_Data\Managed\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+    <Reference Include="UnityEngine">
+      <HintPath>D:\Steam Games\steamapps\common\OxygenNotIncluded\OxygenNotIncluded_Data\Managed\UnityEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>D:\Steam Games\steamapps\common\OxygenNotIncluded\OxygenNotIncluded_Data\Managed\UnityEngine.CoreModule.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CocoaOak_Acorn_Config.cs" />
+    <Compile Include="CocoaOak_Tree_Config.cs" />
+    <Compile Include="Creamtop_Cap_Config.cs" />
+    <Compile Include="Creamtop_Config.cs" />
+    <Compile Include="Food_Cookie.cs" />
+    <Compile Include="Food_Fish_Wrap.cs" />
+    <Compile Include="Food_FlatBread.cs" />
+    <Compile Include="Food_GrilledCreamtop.cs" />
+    <Compile Include="Food_KakawaBar.cs" />
+    <Compile Include="Food_KakawaButter.cs" />
+    <Compile Include="Food_Lice_Wrap.cs" />
+    <Compile Include="Food_Meat_Taco.cs" />
+    <Compile Include="Food_Meat_Wrap.cs" />
+    <Compile Include="Food_MushroomStew.cs" />
+    <Compile Include="Food_Nutcake.cs" />
+    <Compile Include="Food_RoastedKakawa.cs" />
+    <Compile Include="Food_Sea_Taco.cs" />
+    <Compile Include="Plant_Patches.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SunnyWheat_Grain_Config.cs" />
+    <Compile Include="SunnyWheat_Plant_Config.cs" />
+    <Compile Include="Version.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="anim\assets\cocoaOak_acorn\" />
+    <Folder Include="anim\assets\cocoaOak_plant\" />
+    <Folder Include="anim\assets\cocoaOak_seed\" />
+    <Folder Include="anim\assets\creamCap\" />
+    <Folder Include="anim\assets\creamtop_plant\" />
+    <Folder Include="anim\assets\creamtop_spore\" />
+    <Folder Include="anim\assets\food_cookie\" />
+    <Folder Include="anim\assets\food_fish_wrap\" />
+    <Folder Include="anim\assets\food_flat_bread\" />
+    <Folder Include="anim\assets\food_grilled_creamtop\" />
+    <Folder Include="anim\assets\food_kakawa_bar\" />
+    <Folder Include="anim\assets\food_kakawa_butter\" />
+    <Folder Include="anim\assets\food_lice_wrap\" />
+    <Folder Include="anim\assets\food_meat_taco\" />
+    <Folder Include="anim\assets\food_meat_wrap\" />
+    <Folder Include="anim\assets\food_mushroom_stew\" />
+    <Folder Include="anim\assets\food_nutcake\" />
+    <Folder Include="anim\assets\food_roasted_kakawa\" />
+    <Folder Include="anim\assets\food_sea_taco\" />
+    <Folder Include="anim\assets\sunnyWheat_bulb\" />
+    <Folder Include="anim\assets\sunnyWheat_grain\" />
+    <Folder Include="anim\assets\sunnyWheat_plant\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
